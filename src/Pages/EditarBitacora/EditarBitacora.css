@@ -1,0 +1,163 @@
+.container-edit{
+  background-color: white;
+  height: 100vh;
+}
+
+
+
+.bitacora-container-edit {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+  border-radius: 10px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title-text-edit {
+  color: #397f0e;
+  font-size: 2rem;
+  margin-left: -10px;
+}
+
+.bitacora-header-edit {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image-upload-container-edit {
+  width: 100%;
+  background-color: transparent; /* Sin fondo para el área de la imagen */
+  border-radius: 12px;
+  padding: 20px 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image-gallery-edit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.image-wrapper-edit {
+  position: relative;
+  display: inline-block;
+}
+
+.image-wrapper-edit img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.upload-label-edit {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.upload-box-edit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #397f0e;
+  color: white;
+  height: 60px;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.upload-icon-edit {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.upload-text-edit {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.bitacora-fields-edit {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* Espaciado mayor entre los campos */
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.date-time-container-edit {
+  display: flex;
+  gap: 20px; /* Espacio entre Fecha y Hora */
+  margin-bottom: 15px; /* Más espacio debajo de los selectores de fecha y hora */
+}
+
+.save-button-container-edit {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Ajustes para responsividad */
+@media (max-width: 768px) {
+  .title-text-edit {
+      font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bitacora-container-edit {
+      padding: 10px;
+      margin-top: 20px;
+  }
+
+  .title-text-edit {
+      font-size: 1.6rem;
+  }
+
+  .bitacora-image-edit {
+      width: 60px;
+      height: 60px;
+  }
+
+  .upload-box-edit {
+      height: 50px;
+  }
+}
+
+/* Estilos para cambiar el color de la etiqueta cuando el input esté enfocado */
+.input-box-edit .MuiInputLabel-root.Mui-focused {
+  color: #2e5d0a; /* Color verde para el label enfocado */
+}
+
+/* Estilos para cambiar el color del texto del input */
+.input-box-edit .MuiInputBase-input {
+  color: black; /* Cambia el texto a verde */
+}
+
+/* Estilos para el borde del input cuando está enfocado */
+.input-box-edit .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: rgb(58, 126, 13); /* Verde para el borde enfocado */
+}
+
+/* Estilo para el borde del input en estado normal */
+.input-box-edit .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: #d9d9d9; /* Color de borde predeterminado */
+}
+
+/* Cambio de color al pasar el cursor por encima */
+.input-box-edit .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: rgb(58, 126, 13); /* Verde al hacer hover */
+}
